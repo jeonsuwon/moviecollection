@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieColllection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="moviecollection.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <div class="title">
+  </div>
+  <form class="search" onsubmit="handleSearch(event)">
+    <div class="textid">
+      <h1 class="titletext">나만의 최고 평점 영화 콜렉션</h1>
+      <div class="input-group mb-3">
+        <input type="text" id="search-input" class="form-control" placeholder="검색할 영화를 입력해주세요."
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit" id="search-btn">검색하기</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <br />
+  <section class="card-list"></section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script src="moviecollection.js"></script>
+
+</html>
